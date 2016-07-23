@@ -24,6 +24,8 @@ See [README.aws.md](./README.aws.md) if you want to install it on AWS Elastic Be
    no password as `./volumes/cert/key-no-password.pem`. If you don't have
    them you may generate a self-signed SSL certificate.
 
+   You may create the key by using `./volumes/cert/create_key.sh`.
+
 3. Build and run mattermost
 
     docker-compose up -d
@@ -38,7 +40,7 @@ See [README.aws.md](./README.aws.md) if you want to install it on AWS Elastic Be
     environment:
       - MATTERMOST_ENABLE_SSL=false
     ```
-    
+
 2. Build and run mattermost
 
     docker-compose up -d
