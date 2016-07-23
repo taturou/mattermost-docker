@@ -20,7 +20,6 @@ app:
 web:
   build: web
   ports:
-    - "80:80"
     - "443:443"
   links:
     - app:app
@@ -29,5 +28,5 @@ web:
     - ./volumes/web/cert:/cert:ro
     - /etc/localtime:/etc/localtime:ro
   environment:
-    - MATTERMOST_ENABLE_SSL=false
+    - MATTERMOST_ENABLE_SSL=true
     - PLATFORM_PORT_80_TCP_PORT=80
